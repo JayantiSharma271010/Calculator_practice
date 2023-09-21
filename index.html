@@ -12,38 +12,39 @@
     <div class="calculator-wrapper container text-center my-4">
         <h1 class="display-3 border-bottom py-3">Calculator</h1>
 
-        <div class="calculator-main">
-            <div class="form w-25 m-auto ">
+        <div class="calculator-main my-5">
+            <div class="form  m-auto border-black shadow">
                 <form name="form1">
-                    <input type="text" id="output" name="answer"> <br>
+                    <input type="text" id="output" name="answer" class="output" readonly> 
 
                     <!-- Input Btn -->
                  <div class="calculator-inputBtn">
-                        <input type="button" value="1" onclick="form1.answer.value += '1'">
-                        <input type="button" value="2" onclick="form1.answer.value += '2'">
-                        <input type="button" value="3" onclick="form1.answer.value += '3'">
-                        <input type="button" value="+" onclick="form1.answer.value += '+'">
+                        <input type="button" value="1" onclick="form1.answer.value += '1'" class="btn-secondary">
+                        <input type="button" value="2" onclick="form1.answer.value += '2'" class="btn-secondary">
+                        <input type="button" value="3" onclick="form1.answer.value += '3'" class="btn-secondary">
+                        <input type="button" value="+" onclick="form1.answer.value += '+'" class="btn-secondary">
                       
-                        <input type="button" value="4" onclick="form1.answer.value += '4'">
-                        <input type="button" value="5" onclick="form1.answer.value += '5'">
-                        <input type="button" value="6" onclick="form1.answer.value += '6'">
-                        <input type="button" value="-" onclick="form1.answer.value += '-'">
-          
-                        <input type="button" value="7" onclick="form1.answer.value += '7'">
-                        <input type="button" value="8" onclick="form1.answer.value += '8'">
-                        <input type="button" value="9" onclick="form1.answer.value += '9'">
-                        <input type="button" value="*" onclick="form1.answer.value += '*'">
-              
-                        <input type="button" value="/" onclick="form1.answer.value += '/'">
-                        <input type="button" value="0" onclick="form1.answer.value += '0'">
-                        <input type="button" value="." onclick="form1.answer.value += '.'">
-                        <input type="button" value="=" onclick="eval(form1.answer.value)">
-                    </div>
-            
-                        <input type="button" value="Clear All" onclick="form1.answer.value = ''" class="clearBtn">
+                        <input type="button" value="4" onclick="form1.answer.value += '4'" class="btn-secondary">
+                        <input type="button" value="5" onclick="form1.answer.value += '5'" class="btn-secondary">
+                        <input type="button" value="6" onclick="form1.answer.value += '6'" class="btn-secondary">
+                        <input type="button" value="-" onclick="form1.answer.value += '-'" class="btn-secondary">
+                    
+                        <input type="button" value="7" onclick="form1.answer.value += '7'" class="btn-secondary">
+                        <input type="button" value="8" onclick="form1.answer.value += '8'" class="btn-secondary">
+                        <input type="button" value="9" onclick="form1.answer.value += '9'" class="btn-secondary">
+                        <input type="button" value="*" onclick="form1.answer.value += '*'" class="btn-secondary">
+               
+                        <input type="button" value="/" onclick="form1.answer.value += '/'" class="btn-secondary">
+                        <input type="button" value="0" onclick="form1.answer.value += '0'" class="btn-secondary">
+                        <input type="button" value="." onclick="form1.answer.value += '.'" class="btn-secondary">
+                        <input type="button" value="=" onclick="calculate()" class="btn-secondary">
+                 </div>
+                    
+                    <input type="button" value="Clear All" onclick="form1.answer.value = ''" class="clearBtn btn-outline-secondary" >
                 </form>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
