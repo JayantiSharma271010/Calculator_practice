@@ -7,3 +7,25 @@
 .form{
     border: 1px solid black;
 }
+
+form{
+   
+}
+
+.calculator-inputBtn{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+input[type='button']{
+    grid-column: span 1;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.clearBtn{
+    width: 100%;
+    margin-top: 10px;
+}
